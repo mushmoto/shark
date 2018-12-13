@@ -1,19 +1,22 @@
 #Greenfoot project file
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=4deb77d404915d29b8751cb04bc98b6e15194301
 class.Jhon.image=lift-open.png
 class.Jhon.superclass=greenfoot.Actor
 class.MyWorld.image=bluerock.jpg
 class.MyWorld.superclass=greenfoot.World
 mainWindow.height=546
 mainWindow.width=856
-mainWindow.x=840
-mainWindow.y=267
+mainWindow.x=560
+mainWindow.y=214
 package.numDependencies=0
 package.numTargets=2
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
-target1.editor.x=790
-target1.editor.y=380
+target1.editor.x=608
+target1.editor.y=254
 target1.height=50
 target1.name=Jhon
 target1.naviview.expanded=true
