@@ -18,6 +18,12 @@ public class Jhon extends Actor
         setRotation(0);
         move(1);
     }
-        // Add your action code here.
-    }    
+        
+        if( Greenfoot.isKeyDown( "down" ) ){
+        setRotation(90);
+        move(1);
+    }
+
+    }
+        // Add your action code here.    
 }
