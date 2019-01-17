@@ -11,7 +11,6 @@ import greenfoot.*;
 public class Game_page extends World
 {
     static int score = 0;
-
     public static int getScore(){ return score;}
     /**
      * Constructor for objects of class Game_page.
@@ -25,11 +24,20 @@ public class Game_page extends World
         super(600, 400, 1);
         addObject(new Shark(), 70, 175);
     }
+    
+    public static void addScore()
+    {
+        score ++;
+    }
+    
+    public static void addScore2()
+    {
+        score += 3;
+    }
+    
     public static void game_over()
     {
-        
         World game = new Game_over();
         Greenfoot.setWorld(game);
-
     }
 }
