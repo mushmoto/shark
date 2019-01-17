@@ -10,11 +10,12 @@ public class Shark extends Actor
 {
     int place;
     int twait = 0;
+    int time = 0;
     public Shark()
     {
            place = 1;
            GreenfootImage image = getImage();
-           image.scale(image.getWidth() - 550, image.getHeight() - 330);
+           image.scale(image.getWidth() - 600, image.getHeight() - 360);
            setImage(image);
            
     }
@@ -24,6 +25,8 @@ public class Shark extends Actor
      */
     public void act() 
     {
+            timer();
+        
             if(place < 0){place = 0;}
             if(place > 3){place = 3;}
             
@@ -40,6 +43,7 @@ public class Shark extends Actor
                 twait = 10;
             }
             
+<<<<<<< HEAD
             Actor actor = getOneObjectAtOffset( 0, 0, Ex.class);//サメに当たったらExが消える
             if(actor != null){
                     getWorld().removeObject( actor ) ;
@@ -47,4 +51,19 @@ public class Shark extends Actor
     }
     
     
+=======
+            
+    }
+    
+    public void timer(){
+            Game_page game_page = new Game_page();
+            
+            if(time <= 999){time++;}
+            else{ time = 0; }
+            
+            if(time % 5 == 0){
+                game_page.spawnEnemy();
+            }
+   }
+>>>>>>> 6cc139d9f4e6b893ee155ff55a174e0201b5066c
 }
