@@ -25,7 +25,7 @@ public class Game_page extends World
         super(600, 400, 1);
         addObject(new Shark(), 70, 175);
     }
-    public Game over()
+    public static void game_over()
     {
         
         World game = new Game_over();

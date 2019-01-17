@@ -19,7 +19,7 @@ public class Game_over extends World
         super(600, 400, 1); 
         showText("Game Over…", 200, 150);
         
-        String score = "SCORE " + Game_page.getscore();
+        String score = "SCORE " + Game_page.getScore();
         showText(score, 400, 150);
     }
 }
