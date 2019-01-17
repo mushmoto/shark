@@ -24,6 +24,12 @@ public class Game_page extends World
 
         super(600, 400, 1);
         addObject(new Shark(), 70, 175);
+        
+        /*爆弾ランダム召喚*/
+        int bombX = Greenfoot.getRandomNumber(getWidth());
+        int bombY = Greenfoot.getRandomNumber(getHeight());
+        addObject(new Bomb(), bombX, bombY);
+        addObject(new Bomb(), 400, 100);
     }
     public static void game_over()
     {
@@ -32,4 +38,7 @@ public class Game_page extends World
         Greenfoot.setWorld(game);
 
     }
+    
+    
+    
 }

@@ -15,5 +15,6 @@ public class Ex extends teki
     public void act() 
     {
         // Add your action code here.
+        getImage().scale(50,50);
     }    
 }

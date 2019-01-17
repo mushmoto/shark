@@ -22,6 +22,7 @@ public class Game_title extends World
         Click Click = new Click();
         
         addObject(Click,300,300);
+        addObject( new title(), 300, 150 );
     }
     
     
