@@ -22,21 +22,26 @@ public class Game_page extends World
     
     public Game_page()
     {    
-<<<<<<< HEAD
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false);
-=======
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.      
-        super(600, 400, 1, false);
+        
+        
         addObject(new Score(), -10, -10);
->>>>>>> a68c8be17466834801056be5ed5f2918682b4598
         addObject(new Shark(), 70, 175);
+        
         
         
         /*int exx =Greenfoot.getRandomNumber(getWidth()); 
         int exy =Greenfoot.getRandomNumber(getHeight()); */
         addObject(new Ex(),100,100);
+
+        /*爆弾ランダム召喚*/
+        int bombX = Greenfoot.getRandomNumber(getWidth());
+        int bombY = Greenfoot.getRandomNumber(getHeight());
+        addObject(new Bomb(), bombX, bombY);
+        addObject(new Bomb(), 400, 100);
+
     }
     
     public static void game_over()
@@ -45,9 +50,9 @@ public class Game_page extends World
         Greenfoot.setWorld(game);
     }
     
-<<<<<<< HEAD
+
     
-=======
+
     public void spawnEnemy(){
         int enemyNum = Greenfoot.getRandomNumber(100);
         if(enemyNum >= 1 && enemyNum <= 40){
@@ -65,5 +70,6 @@ public class Game_page extends World
          
         
     }  
->>>>>>> 6cc139d9f4e6b893ee155ff55a174e0201b5066c
+
 }
+

@@ -4,17 +4,12 @@ comment0.target=int\ getScore()
 comment1.params=
 comment1.target=void\ addScore()
 comment2.params=
-<<<<<<< HEAD
-comment2.target=void\ game_over()
-comment3.params=
-comment3.target=void\ spawnEnemy()
-numComments=4
-=======
 comment2.target=void\ addScore2()
 comment3.params=
 comment3.target=Game_page()
 comment3.text=\n\ Constructor\ for\ objects\ of\ class\ Game_page.\n\ \n
 comment4.params=
 comment4.target=void\ game_over()
-numComments=5
->>>>>>> a68c8be17466834801056be5ed5f2918682b4598
+comment5.params=
+comment5.target=void\ spawnEnemy()
+numComments=6

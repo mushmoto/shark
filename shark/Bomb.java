@@ -15,5 +15,13 @@ public class Bomb extends teki
     public void act() 
     {
         // Add your action code here.
+        
+        getImage().scale(50,50);
+        
+        
+        setRotation(-180);
+        move(1);
+        setRotation(0);
+        
     }    
 }

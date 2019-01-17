@@ -43,17 +43,16 @@ public class Shark extends Actor
                 twait = 10;
             }
             
-<<<<<<< HEAD
+
             Actor actor = getOneObjectAtOffset( 0, 0, Ex.class);//サメに当たったらExが消える
             if(actor != null){
                     getWorld().removeObject( actor ) ;
             }
     }
     
-    
-=======
+
             
-    }
+    
     
     public void timer(){
             Game_page game_page = new Game_page();
@@ -65,5 +64,5 @@ public class Shark extends Actor
                 game_page.spawnEnemy();
             }
    }
->>>>>>> 6cc139d9f4e6b893ee155ff55a174e0201b5066c
+
 }
