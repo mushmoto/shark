@@ -21,5 +21,10 @@ public class N_ter extends teki
     public void act() 
     {
         // Add your action code here.
-    }    
+        Actor hit_by_shark = getOneObjectAtOffset( 0, 0, Shark.class );
+        if( hit_by_shark != null ){
+            Game_page.addScore();
+            getWorld().removeObject(hit_by_shark);
+        }
+    }
 }
