@@ -1,12 +1,12 @@
 import greenfoot.*;
 
 /**
- * Write a description of class game_title here.
+ * Write a description of class title here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class game_title extends Actor
+public class title extends Actor
 {
     GifImage myGif = new GifImage("title.gif");
     /**
@@ -18,5 +18,5 @@ public class game_title extends Actor
         // Add your action code here.
         setImage( myGif.getCurrentImage() );
         getImage().scale(600,200);
-    }    
+    }  
 }
