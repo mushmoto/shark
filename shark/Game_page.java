@@ -8,7 +8,7 @@ import greenfoot.*;
  */
 public class Game_page extends World
 {
-
+    static int score = 0;
     /**
      * Constructor for objects of class Game_page.
      * 
@@ -16,6 +16,13 @@ public class Game_page extends World
     public Game_page()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1);
+    }
+    public Game over()
+    {
+        static public int getscore(){return score;}
+        
+        World game = new WorlGame();
+        Greenfoot.setWorld(game);
     }
 }
