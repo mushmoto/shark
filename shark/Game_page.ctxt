@@ -2,12 +2,12 @@
 comment0.params=
 comment0.target=int\ getScore()
 comment1.params=
-comment1.target=Game_page()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Game_page.\n\ \n
+comment1.target=void\ addScore()
 comment2.params=
-comment2.target=void\ addScore()
+comment2.target=void\ addScore2()
 comment3.params=
-comment3.target=void\ addScore2()
+comment3.target=Game_page()
+comment3.text=\n\ Constructor\ for\ objects\ of\ class\ Game_page.\n\ \n
 comment4.params=
 comment4.target=void\ game_over()
 numComments=5
