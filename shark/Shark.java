@@ -39,5 +39,12 @@ public class Shark extends Actor
                 place++;
                 twait = 10;
             }
-    }    
+            
+            Actor actor = getOneObjectAtOffset( 0, 0, Ex.class);//サメに当たったらExが消える
+            if(actor != null){
+                    getWorld().removeObject( actor ) ;
+            }
+    }
+    
+    
 }

@@ -24,6 +24,11 @@ public class Game_page extends World
 
         super(600, 400, 1);
         addObject(new Shark(), 70, 175);
+        
+        
+        /*int exx =Greenfoot.getRandomNumber(getWidth()); 
+        int exy =Greenfoot.getRandomNumber(getHeight()); */
+        addObject(new Ex(),100,100);
     }
     public static void game_over()
     {
@@ -32,4 +37,6 @@ public class Game_page extends World
         Greenfoot.setWorld(game);
 
     }
+    
+    
 }
