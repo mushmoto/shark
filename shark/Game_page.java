@@ -11,6 +11,7 @@ import greenfoot.*;
 public class Game_page extends World
 {   
     static int score = 0;
+    static int time = 0;
     public static int getScore(){ return score;}
     public static void addScore(){ score ++; }
     public static void addScore2(){score += 3;}
@@ -51,22 +52,34 @@ public class Game_page extends World
     }
     
 
-    
+    public void act(){
+        
+            if(time <= 99999){time++;}
+            else{ time = 0; }
+            
+            if(time % 20 == 0){
+                spawnEnemy();
+            }
+   }
 
     public void spawnEnemy(){
         int enemyNum = Greenfoot.getRandomNumber(100);
+        int place = Greenfoot.getRandomNumber(4);
+       
         if(enemyNum >= 1 && enemyNum <= 40){
-            addObject(new N_ter(), 100, 100);
+            addObject(new N_ter(), 600, 40+45+(90*place));
         }
+        /*
         else if(enemyNum >= 41 && enemyNum <= 60){
-                addObject(new S_ter(), -100, -100);
+                addObject(new S_ter(), 600, 40+45+(90*place));
         }else if(enemyNum >= 61 && enemyNum <= 73){
-                addObject(new Pw(), -100, -100);
+                addObject(new Pw(), 600, 40+45+(90*place));
         }else if(enemyNum >= 74 && enemyNum <= 86){
-                addObject(new Ex(), -100, -100);
+                addObject(new Ex(), 600, 40+45+(90*place));
         }else if(enemyNum >= 87 && enemyNum <= 100){
-                addObject(new Bomb(), -100, -100);
+                addObject(new Bomb(), 600, 40+45+(90*place));
         }
+        */
          
         
     }  

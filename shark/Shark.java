@@ -10,12 +10,11 @@ public class Shark extends Actor
 {
     int place;
     int twait = 0;
-    int time = 0;
     public Shark()
     {
            place = 1;
            GreenfootImage image = getImage();
-           image.scale(image.getWidth() - 600, image.getHeight() - 360);
+           image.scale(image.getWidth() - 550, image.getHeight() - 310);
            setImage(image);
            
     }
@@ -25,7 +24,6 @@ public class Shark extends Actor
      */
     public void act() 
     {
-            timer();
         
             if(place < 0){place = 0;}
             if(place > 3){place = 3;}
@@ -54,15 +52,6 @@ public class Shark extends Actor
             
     
     
-    public void timer(){
-            Game_page game_page = new Game_page();
-            
-            if(time <= 999){time++;}
-            else{ time = 0; }
-            
-            if(time % 5 == 0){
-                game_page.spawnEnemy();
-            }
-   }
+    
 
 }
