@@ -19,11 +19,9 @@ public class Game_page extends World
 
     public static void addScore(){ score += 50;}
     public static void addScore2(){score += 150;}
+
     public static int getTime(){return time;}
     public static void addLife(){if(life != 2)life ++;}
-
-    
-    
 
     public static int getLife(){ return life; }
   
@@ -48,10 +46,6 @@ public class Game_page extends World
         
         addObject(new Score(), -10, -10);
         addObject(new Shark(), 70, 175);
-
-        addObject(new life(), -10,-10);
-
-
 
     }
     
@@ -82,35 +76,11 @@ public class Game_page extends World
         int spawn_x = 650;
         int spawn_y = 85+(90*place);
 
-        int[] pb = {52, 20, 10, 3, 15};
-        
-        if(enemyNum >= 1 && enemyNum <= pb[0] ){
-
-
-        if(enemyNum >= 1 && enemyNum <= 40){
-
-            addObject(new N_ter(), spawn_x, spawn_y);
-            
-        }else if(enemyNum >= pb[0] + 1 && enemyNum <= pb[0] + pb[1]){
-            addObject(new S_ter(), spawn_x, spawn_y);
-                
-        }else if(enemyNum >= pb[0]+pb[1]+1 && enemyNum <= pb[0]+pb[1]+pb[2]){
-            addObject(new Pw(), spawn_x, spawn_y);
-                
-        }else if(enemyNum >= pb[0]+pb[1]+pb[2]+1 && enemyNum <= 100 - pb[4]){
-            addObject(new Ex(), spawn_x, spawn_y);
-                
-        }else if(enemyNum >= 100 - pb[4] + 1 && enemyNum <= 100){
-            addObject(new Bomb(), spawn_x, spawn_y);
-        }
-        
-
-        /*ここから*/
+        /*ハート処理*/
         if( life == 2 ){
             addObject( new heart(), 550,20 );
         }
         
-
         else if(enemyNum >= 41 && enemyNum <= 60){
                 addObject(new S_ter(), spawn_x, spawn_y);
         }else if(enemyNum >= 61 && enemyNum <= 73){
@@ -124,19 +94,15 @@ public class Game_page extends World
 
         //int[] pb = {52, 20, 10, 3, 15};
         
-        if(enemyNum >= 1 && enemyNum <= pb[0] ){
+        if(enemyNum > 0 && enemyNum <= 52 ){
             addObject(new N_ter(), spawn_x, spawn_y);
-            
-        }else if(enemyNum >= pb[0] + 1 && enemyNum <= pb[0] + pb[1]){
-            addObject(new S_ter(), spawn_x, spawn_y);
-                
-        }else if(enemyNum >= pb[0]+pb[1]+1 && enemyNum <= pb[0]+pb[1]+pb[2]){
-            addObject(new Pw(), spawn_x, spawn_y);
-                
-        }else if(enemyNum >= pb[0]+pb[1]+pb[2]+1 && enemyNum <= 100 - pb[4]){
+        }else if(enemyNum > 52 && enemyNum <= 72){
+            addObject(new S_ter(), spawn_x, spawn_y);  
+        }else if(enemyNum > 72 && enemyNum <= 82){
+            addObject(new Pw(), spawn_x, spawn_y);   
+        }else if(enemyNum > 82 && enemyNum <= 85){
             addObject(new Ex(), spawn_x, spawn_y);
-                
-        }else if(enemyNum >= 100 - pb[4] + 1 && enemyNum <= 100){
+        }else if(enemyNum > 85 && enemyNum <= 100){
             addObject(new Bomb(), spawn_x, spawn_y);
         }
    
@@ -145,4 +111,3 @@ public class Game_page extends World
 
 }
 
-}
