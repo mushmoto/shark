@@ -12,10 +12,10 @@ public class Shark extends Actor
     int twait = 0;
     public Shark()
     {
-           place = 1;
-           GreenfootImage image = getImage();
-           image.scale(image.getWidth() - 550, image.getHeight() - 310);
-           setImage(image);
+            place = 1;
+            GreenfootImage image = getImage();
+            image.scale(250, 115);
+            setImage(image);
            
     }
     /**

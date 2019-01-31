@@ -15,6 +15,7 @@ public class Game_page extends World
     public static int getScore(){ return score;}
     public static void addScore(){ score ++; }
     public static void addScore2(){score += 3;}
+    public static int getTime(){return time;}
 
     /**
      * Constructor for objects of class Game_page.
@@ -38,10 +39,7 @@ public class Game_page extends World
         addObject(new Ex(),100,100);
 
         /*爆弾ランダム召喚*/
-        int bombX = Greenfoot.getRandomNumber(getWidth());
-        int bombY = Greenfoot.getRandomNumber(getHeight());
-        addObject(new Bomb(), bombX, bombY);
-        addObject(new Bomb(), 400, 100);
+       
 
     }
     
@@ -65,21 +63,24 @@ public class Game_page extends World
     public void spawnEnemy(){
         int enemyNum = Greenfoot.getRandomNumber(100);
         int place = Greenfoot.getRandomNumber(4);
-       
+        int spawn_x = 650;
+        int spawn_y = 85+(90*place);
+        
+        
         if(enemyNum >= 1 && enemyNum <= 40){
-            addObject(new N_ter(), 600, 40+45+(90*place));
+            addObject(new N_ter(), spawn_x, spawn_y);
         }
-        /*
+        
         else if(enemyNum >= 41 && enemyNum <= 60){
-                addObject(new S_ter(), 600, 40+45+(90*place));
+                addObject(new S_ter(), spawn_x, spawn_y);
         }else if(enemyNum >= 61 && enemyNum <= 73){
-                addObject(new Pw(), 600, 40+45+(90*place));
+                addObject(new Pw(), spawn_x, spawn_y);
         }else if(enemyNum >= 74 && enemyNum <= 86){
-                addObject(new Ex(), 600, 40+45+(90*place));
+                addObject(new Ex(), spawn_x, spawn_y);
         }else if(enemyNum >= 87 && enemyNum <= 100){
-                addObject(new Bomb(), 600, 40+45+(90*place));
+                addObject(new Bomb(), spawn_x, spawn_y);
         }
-        */
+        
          
         
     }  
