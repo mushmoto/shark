@@ -21,9 +21,7 @@ public class teki extends Actor
     {
         // Add your action code here.
         setRotation(180); // set new angle
-        move(1); // move from center along radius to circle
+        move(10); // move from center along radius to circle
         setRotation(0); 
-        
-       
     }    
 }

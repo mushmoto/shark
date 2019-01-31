@@ -18,19 +18,5 @@ public class Bomb extends teki
      * Act - do whatever the Bomb wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
-    {
-        // Add your action code here.
-        
-        
-        setRotation(-180);
-        move(10);
-        setRotation(0);
-        
-         Actor hit_by_shark = getOneObjectAtOffset( 0, 0, Shark.class );
-        if( hit_by_shark != null ){
-            Game_page.subLife();
-            getWorld().removeObject(this);
-        }
-    }    
+
 }
