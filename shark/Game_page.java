@@ -16,22 +16,17 @@ public class Game_page extends World
     
     /* getter / setter */
     public static int getScore(){ return score;}
-<<<<<<< HEAD
+
     public static void addScore(){ score += 50;}
     public static void addScore2(){score += 150;}
     public static int getTime(){return time;}
     public static void addLife(){if(life != 2)life ++;}
-=======
->>>>>>> f60ec9338c666095082c1ee3828658920d850184
+
     
-    public static void addScore(){ score += 50;}
-    public static void addScore2(){score += 150;}
     
-    public static int getTime(){return time;}
 
     public static int getLife(){ return life; }
-    
-    public static void addLife(){if(life != 2)life ++;}
+  
     public static void subLife(){ life --; }
     
     public static void resetLife(){ life = 1; }
@@ -86,15 +81,14 @@ public class Game_page extends World
         int place = Greenfoot.getRandomNumber(4);
         int spawn_x = 650;
         int spawn_y = 85+(90*place);
-        
-<<<<<<< HEAD
+
         int[] pb = {52, 20, 10, 3, 15};
         
         if(enemyNum >= 1 && enemyNum <= pb[0] ){
-=======
+
 
         if(enemyNum >= 1 && enemyNum <= 40){
->>>>>>> f60ec9338c666095082c1ee3828658920d850184
+
             addObject(new N_ter(), spawn_x, spawn_y);
             
         }else if(enemyNum >= pb[0] + 1 && enemyNum <= pb[0] + pb[1]){
@@ -110,13 +104,13 @@ public class Game_page extends World
             addObject(new Bomb(), spawn_x, spawn_y);
         }
         
-<<<<<<< HEAD
+
         /*ここから*/
         if( life == 2 ){
             addObject( new heart(), 550,20 );
         }
         
-=======
+
         else if(enemyNum >= 41 && enemyNum <= 60){
                 addObject(new S_ter(), spawn_x, spawn_y);
         }else if(enemyNum >= 61 && enemyNum <= 73){
@@ -128,7 +122,7 @@ public class Game_page extends World
         }  
     
 
-        int[] pb = {52, 20, 10, 3, 15};
+        //int[] pb = {52, 20, 10, 3, 15};
         
         if(enemyNum >= 1 && enemyNum <= pb[0] ){
             addObject(new N_ter(), spawn_x, spawn_y);
@@ -146,7 +140,9 @@ public class Game_page extends World
             addObject(new Bomb(), spawn_x, spawn_y);
         }
    
->>>>>>> f60ec9338c666095082c1ee3828658920d850184
+
     }  
+
+}
 
 }
