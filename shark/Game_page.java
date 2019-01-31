@@ -13,18 +13,23 @@ public class Game_page extends World
     static int score = 0;
     static int time = 0;
     static int life = 1;
+    
+    /* getter / setter */
     public static int getScore(){ return score;}
+    
     public static void addScore(){ score += 50;}
     public static void addScore2(){score += 150;}
-    public static int getTime(){return time;}
-    public static void addLife(){if(life != 2)life ++;}
     
-    /*ここから*/
+    public static int getTime(){return time;}
+    
     public static int getLife(){ return life; }
+    
+    public static void addLife(){if(life != 2)life ++;}
     public static void subLife(){ life --; }
+    
     public static void resetLife(){ life = 1; }
     public static void resetScore(){ score = 0; }
-    /*ここまで*/
+
     
     
 
@@ -42,17 +47,8 @@ public class Game_page extends World
         
         addObject(new Score(), -10, -10);
         addObject(new Shark(), 70, 175);
-        
-        addObject(new life(), 550,20);
-        
-        
-        
-        /*int exx =Greenfoot.getRandomNumber(getWidth()); 
-        int exy =Greenfoot.getRandomNumber(getHeight()); */
-        addObject(new Ex(),100,100);
+        addObject(new life(), -10,-10);
 
-        /*爆弾ランダム召喚*/
-       
 
     }
     
@@ -68,7 +64,7 @@ public class Game_page extends World
             if(time <= 99999){time++;}
             else{ time = 0; }
             
-            if(time % 20 == 0){
+            if(time % 30 == 0){
                 spawnEnemy();
             }
             
