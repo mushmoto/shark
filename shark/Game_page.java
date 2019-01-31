@@ -18,7 +18,15 @@ public class Game_page extends World
     public static void addScore2(){score += 150;}
     public static int getTime(){return time;}
     public static void addLife(){if(life != 2)life ++;}
-
+    
+    /*ここから*/
+    public static int getLife(){ return life; }
+    public static void subLife(){ life --; }
+    public static void resetLife(){ life = 1; }
+    public static void resetScore(){ score = 0; }
+    /*ここまで*/
+    
+    
 
     /**
      * Constructor for objects of class Game_page.
@@ -34,6 +42,8 @@ public class Game_page extends World
         
         addObject(new Score(), -10, -10);
         addObject(new Shark(), 70, 175);
+        
+        addObject(new life(), 550,20);
         
         
         
@@ -60,6 +70,10 @@ public class Game_page extends World
             
             if(time % 20 == 0){
                 spawnEnemy();
+            }
+            
+            if( life == 0 ){
+                game_over();
             }
    }
 
