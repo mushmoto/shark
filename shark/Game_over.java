@@ -19,7 +19,11 @@ public class Game_over extends World
         super(600, 400, 1); 
         showText("Game Over…", 200, 150);
         
-        String score = "SCORE " + Game_page.getScore();
-        showText(score, 400, 150);
+        int score = Game_page.getScore();
+        if(score < 3001)showText("ホワイトランクです", 400, 120);
+        else if(score > 3000 && score < 20001)showText("ゴールドランクです", 400, 120);
+        else if(score > 20000 && score < 100000)showText("プラチナランクです", 400, 120);
+        else if(score > 100000)showText("ダイヤモンドランクです",400, 120);
+        showText("SCORE " + score, 400, 150);
     }
 }

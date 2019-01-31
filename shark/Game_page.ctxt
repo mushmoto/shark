@@ -6,18 +6,16 @@ comment1.target=void\ addScore()
 comment2.params=
 comment2.target=void\ addScore2()
 comment3.params=
-<<<<<<< HEAD
 comment3.target=int\ getTime()
-=======
-comment3.target=void\ addLife()
->>>>>>> 3a5975e6ced5726b46ea8f20f3479eaee626db9b
 comment4.params=
-comment4.target=Game_page()
-comment4.text=\n\ Constructor\ for\ objects\ of\ class\ Game_page.\n\ \n
+comment4.target=void\ addLife()
 comment5.params=
-comment5.target=void\ game_over()
+comment5.target=Game_page()
+comment5.text=\n\ Constructor\ for\ objects\ of\ class\ Game_page.\n\ \n
 comment6.params=
-comment6.target=void\ act()
+comment6.target=void\ game_over()
 comment7.params=
-comment7.target=void\ spawnEnemy()
-numComments=8
+comment7.target=void\ act()
+comment8.params=
+comment8.target=void\ spawnEnemy()
+numComments=9
