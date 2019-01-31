@@ -18,7 +18,9 @@ public class Ex extends teki
 
            
            getImage().scale(50,50);
-
+            setRotation(180);
+            move(5);
+            setRotation(0);
    
 
     }    

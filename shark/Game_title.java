@@ -20,8 +20,10 @@ public class Game_title extends World
         super(600, 400, 1);
         
         Click Click = new Click();
+        Help Help = new Help();
         
-        addObject(Click,300,300);
+        addObject(Click,300,280);
+        addObject(Help,300,350);
         addObject( new title(), 300, 150 );
     }
     
