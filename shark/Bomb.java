@@ -8,6 +8,12 @@ import greenfoot.*;
  */
 public class Bomb extends teki
 {
+    public Bomb()
+    {
+         GreenfootImage image = getImage();
+         image.scale(image.getWidth() - 550, image.getHeight() - 550);
+         setImage(image);
+    }
     /**
      * Act - do whatever the Bomb wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -16,11 +22,9 @@ public class Bomb extends teki
     {
         // Add your action code here.
         
-        getImage().scale(50,50);
-        
         
         setRotation(-180);
-        move(1);
+        move(10);
         setRotation(0);
         
     }    
