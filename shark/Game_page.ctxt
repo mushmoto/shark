@@ -16,17 +16,6 @@ comment3.target=int\ getTime()
 comment4.params=
 comment4.target=void\ addLife()
 comment5.params=
-<<<<<<< HEAD
-comment5.target=Game_page()
-comment5.text=\n\ Constructor\ for\ objects\ of\ class\ Game_page.\n\ \n
-comment6.params=
-comment6.target=void\ game_over()
-comment7.params=
-comment7.target=void\ act()
-comment8.params=
-comment8.target=void\ spawnEnemy()
-numComments=9
-=======
 comment5.target=int\ getLife()
 comment5.text=\u3053\u3053\u304B\u3089
 comment6.params=
@@ -39,4 +28,3 @@ comment9.params=
 comment9.target=Game_page()
 comment9.text=\n\ Constructor\ for\ objects\ of\ class\ Game_page.\n\ \n
 numComments=13
->>>>>>> c9da42f81d1e6feec9116effd2c309b6f8da277b

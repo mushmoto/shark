@@ -101,7 +101,10 @@ public class Game_page extends World
             addObject(new Bomb(), spawn_x, spawn_y);
         }
         
-         
+        /*ここから*/
+        if( life == 2 ){
+            addObject( new heart(), 550,20 );
+        }
         
     }  
 
