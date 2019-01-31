@@ -12,6 +12,10 @@ public class Shark extends Actor
     int twait = 0;
     int status = 0;
     int pw_up_time = 0;
+<<<<<<< HEAD
+=======
+    int keyPushed = 0;
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
     public Shark()
     {
             place = 1;
@@ -34,13 +38,24 @@ public class Shark extends Actor
             if(twait >= 0){twait--;}
             
             
-            if( twait <= 0 && Greenfoot.isKeyDown( "up" ) ){
+            if( twait <= 0 && keyPushed == 0 && Greenfoot.isKeyDown( "up" ) ){
                 place--;
                 twait = 7;
+<<<<<<< HEAD
+=======
+                keyPushed = 1;
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
             }
-            if( twait <= 0 && Greenfoot.isKeyDown( "down" ) ){
+            if( twait <= 0 && keyPushed == 0 && Greenfoot.isKeyDown( "down" ) ){
                 place++;
                 twait = 7;
+<<<<<<< HEAD
+=======
+                keyPushed = 1;
+            }
+            if( (Greenfoot.isKeyDown("up") == false) && (Greenfoot.isKeyDown("down") == false)){
+                keyPushed = 0;
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
             }
             
             Actor hit_by_Nter = getOneObjectAtOffset( 0, 0, N_ter.class );
@@ -65,16 +80,22 @@ public class Shark extends Actor
             if(hit_by_Ex != null){
                 getWorld().removeObject( hit_by_Ex ) ;
                 Game_page.addLife();
+<<<<<<< HEAD
                 
                 
          
+=======
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
             }
             
             Actor hit_by_Bomb = getOneObjectAtOffset( 0, 0, Bomb.class);//サメに当たったらExが消える
             if(hit_by_Bomb != null){
                 getWorld().removeObject( hit_by_Bomb ) ;
                 Game_page.subLife();
+<<<<<<< HEAD
                 
+=======
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
             }
             
             if(status == 1){ 
@@ -89,7 +110,11 @@ public class Shark extends Actor
     
     public void change_Pw(){
             status = 1;
+<<<<<<< HEAD
             pw_up_time = 500;
+=======
+            pw_up_time = 180;
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
             setImage("shark_Pw.png"); 
             GreenfootImage image = getImage();
             image.scale(250, 115);

@@ -8,7 +8,6 @@ import greenfoot.*;
  */
 public class Help_page extends World
 {
-
     /**
      * Constructor for objects of class Help_page.
      * 
