@@ -16,7 +16,7 @@ public class Game_page extends World
     
     /* getter / setter */
     public static int getScore(){ return score;}
-    
+
     public static void addScore(){ score += 50;}
     public static void addScore2(){score += 150;}
     
@@ -79,10 +79,58 @@ public class Game_page extends World
         int place = Greenfoot.getRandomNumber(4);
         int spawn_x = 650;
         int spawn_y = 85+(90*place);
+<<<<<<< HEAD
 
         // pb = {52, 20, 10, 3, 15};
         
         if(enemyNum > 0 && enemyNum <= 52){
+=======
+        
+<<<<<<< HEAD
+        int[] pb = {52, 20, 10, 3, 15};
+        
+        if(enemyNum >= 1 && enemyNum <= pb[0] ){
+=======
+
+        if(enemyNum >= 1 && enemyNum <= 40){
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
+            addObject(new N_ter(), spawn_x, spawn_y);
+            
+        }else if(enemyNum >= pb[0] + 1 && enemyNum <= pb[0] + pb[1]){
+            addObject(new S_ter(), spawn_x, spawn_y);
+                
+        }else if(enemyNum >= pb[0]+pb[1]+1 && enemyNum <= pb[0]+pb[1]+pb[2]){
+            addObject(new Pw(), spawn_x, spawn_y);
+                
+        }else if(enemyNum >= pb[0]+pb[1]+pb[2]+1 && enemyNum <= 100 - pb[4]){
+            addObject(new Ex(), spawn_x, spawn_y);
+                
+        }else if(enemyNum >= 100 - pb[4] + 1 && enemyNum <= 100){
+            addObject(new Bomb(), spawn_x, spawn_y);
+        }
+        
+<<<<<<< HEAD
+        /*ここから*/
+        if( life == 2 ){
+            addObject( new heart(), 550,20 );
+        }
+        
+=======
+        else if(enemyNum >= 41 && enemyNum <= 60){
+                addObject(new S_ter(), spawn_x, spawn_y);
+        }else if(enemyNum >= 61 && enemyNum <= 73){
+                addObject(new Pw(), spawn_x, spawn_y);
+        }else if(enemyNum >= 74 && enemyNum <= 86){
+                addObject(new Ex(), spawn_x, spawn_y);
+        }else if(enemyNum >= 87 && enemyNum <= 100){
+                addObject(new Bomb(), spawn_x, spawn_y); 
+        }  
+    
+
+        int[] pb = {52, 20, 10, 3, 15};
+        
+        if(enemyNum >= 1 && enemyNum <= pb[0] ){
+>>>>>>> f384034f4451efa7c97ff7ad4adc07990d4a2ffa
             addObject(new N_ter(), spawn_x, spawn_y);
         }else if(enemyNum > 52 && enemyNum <= 72){
             addObject(new S_ter(), spawn_x, spawn_y);  
@@ -94,6 +142,7 @@ public class Game_page extends World
             addObject(new Bomb(), spawn_x, spawn_y);
         }
    
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
     }  
 
 }

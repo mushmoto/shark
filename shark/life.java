@@ -15,7 +15,12 @@ public class life extends Actor
     public void act() 
     {
         // Add your action code here.
+<<<<<<< HEAD
+        /*    
+=======
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
         String life = "LIFE " + Game_page.getLife();
         getWorld().showText(life, 550, 20);
+        */
     }    
 }

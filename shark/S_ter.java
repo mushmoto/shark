@@ -15,4 +15,12 @@ public class S_ter extends teki
          setImage(image);
         
     }
+<<<<<<< HEAD
+    /**
+     * Act - do whatever the S_ter wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+
+=======
+>>>>>>> f60ec9338c666095082c1ee3828658920d850184
 }
