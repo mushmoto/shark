@@ -16,6 +16,6 @@ public class Score extends Actor
     {
         // Add your action code here.
         String score = "SCORE " + Game_page.getScore();
-        getWorld().showText(score, 0, 0);
+        getWorld().showText(score, 100, 10);
     }    
 }
