@@ -1,6 +1,7 @@
 #BlueJ class context
 comment0.params=
 comment0.target=int\ getScore()
+comment0.text=getter\ /\ setter
 comment1.params=
 comment1.target=void\ addScore()
 comment10.params=
@@ -14,10 +15,14 @@ comment2.target=void\ addScore2()
 comment3.params=
 comment3.target=int\ getTime()
 comment4.params=
-comment4.target=void\ addLife()
+comment4.target=int\ getLife()
 comment5.params=
+<<<<<<< HEAD
 comment5.target=int\ getLife()
 comment5.text=\u3053\u3053\u304B\u3089
+=======
+comment5.target=void\ addLife()
+>>>>>>> 9df3651ea1f4c1c5dd1476088bbe1657b8f09ae6
 comment6.params=
 comment6.target=void\ subLife()
 comment7.params=
