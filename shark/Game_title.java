@@ -8,7 +8,6 @@ import greenfoot.*;
  */
 public class Game_title extends World
 {
-
     /**
      * Constructor for objects of class Game_title.
      * 
@@ -26,7 +25,4 @@ public class Game_title extends World
         addObject(Help,300,350);
         addObject( new title(), 300, 150 );
     }
-    
-    
-  
 }
