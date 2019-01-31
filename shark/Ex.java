@@ -15,11 +15,12 @@ public class Ex extends teki
    
     public void act() 
     {
-
-           
-           getImage().scale(50,50);
-
-   
-
+        getImage().scale(50,50);
+        
+        Actor hit_by_shark = getOneObjectAtOffset( 0, 0, Shark.class );
+        if( hit_by_shark != null ){
+            Game_page.addLife();
+            getWorld().removeObject(this);
+        }
     }    
 }

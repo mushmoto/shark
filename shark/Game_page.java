@@ -12,9 +12,11 @@ public class Game_page extends World
 {   
     static int score = 0;
     static int time = 0;
+    static int life = 1;
     public static int getScore(){ return score;}
-    public static void addScore(){ score ++; }
+    public static void addScore(){ score ++;}
     public static void addScore2(){score += 3;}
+    public static void addLife(){if(life != 2)life ++;}
 
     /**
      * Constructor for objects of class Game_page.
