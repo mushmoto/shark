@@ -15,6 +15,10 @@ public class Click extends Actor
     public void act() 
     {
         if (Greenfoot.mouseClicked(this)) {
+            
+            /*ここから*/
+            Game_page.resetLife();
+            Game_page.resetScore();
             Greenfoot.setWorld(new Game_page());
         }
     }    

@@ -19,16 +19,5 @@ public class N_ter extends teki
          setImage(image);
          
     }
-    public void act() 
-    {
-        // Add your action code here.
-        setRotation(180);
-        move(10);
-        setRotation(0);
-        Actor hit_by_shark = getOneObjectAtOffset( 0, 0, Shark.class );
-        if( hit_by_shark != null ){
-            Game_page.addScore();
-            getWorld().removeObject(this);
-        }
-    }
+  
 }
