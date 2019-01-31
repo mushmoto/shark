@@ -27,5 +27,10 @@ public class Bomb extends teki
         move(10);
         setRotation(0);
         
+         Actor hit_by_shark = getOneObjectAtOffset( 0, 0, Shark.class );
+        if( hit_by_shark != null ){
+            Game_page.subLife();
+            getWorld().removeObject(this);
+        }
     }    
 }
