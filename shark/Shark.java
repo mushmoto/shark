@@ -59,9 +59,13 @@ public class Shark extends Actor
             }
 
             Actor hit_by_Ster = getOneObjectAtOffset( 0, 0, S_ter.class );
-            if( hit_by_Ster != null  && status == 1){
-                getWorld().removeObject( hit_by_Ster );
-                Game_page.addScore2();
+            if( hit_by_Ster != null){
+                 getWorld().removeObject( hit_by_Ster );
+                if(status == 1){
+                    Game_page.addScore2();
+                }else{
+                    Game_page.subLife();
+                }
             }
             
             Actor hit_by_Pw = getOneObjectAtOffset( 0, 0, Pw.class );
@@ -74,10 +78,6 @@ public class Shark extends Actor
             if(hit_by_Ex != null){
                 getWorld().removeObject( hit_by_Ex ) ;
                 Game_page.addLife();
-
-                
-                
-
             }
             
             Actor hit_by_Bomb = getOneObjectAtOffset( 0, 0, Bomb.class);//サメに当たったらExが消える

@@ -80,17 +80,6 @@ public class Game_page extends World
         if( life == 2 ){
             addObject( new heart(), 550,20 );
         }
-        
-        else if(enemyNum >= 41 && enemyNum <= 60){
-                addObject(new S_ter(), spawn_x, spawn_y);
-        }else if(enemyNum >= 61 && enemyNum <= 73){
-                addObject(new Pw(), spawn_x, spawn_y);
-        }else if(enemyNum >= 74 && enemyNum <= 86){
-                addObject(new Ex(), spawn_x, spawn_y);
-        }else if(enemyNum >= 87 && enemyNum <= 100){
-                addObject(new Bomb(), spawn_x, spawn_y); 
-        }  
-    
 
         //int[] pb = {52, 20, 10, 3, 15};
         
