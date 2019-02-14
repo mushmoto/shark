@@ -1,5 +1,6 @@
 import greenfoot.*;
 
+
 /**
  * Write a description of class Game_over here.
  * 
@@ -32,6 +33,6 @@ public class Game_over extends World
         else if(score > 3000 && score < 20001)showText("ゴールドランクです",300, 240);
         else if(score > 20000 && score < 100000)showText("プラチナランクです", 300, 240);
         else if(score > 100000)showText("ダイヤモンドランクです",300, 240);
-        showText("SCORE " + score, 300, 190);
+        showText("SCORE " + score, 300, 190);     
     }
 }
